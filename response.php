@@ -27,7 +27,7 @@
 <body>
 
 You searched <?php echo $_GET["q"]; ?><br>
-Your IP is <?php echo $_SERVER; ?><br>
+Your IP is <?php var_dump($_SERVER); ?><br>
 
 </body>
 </html>
