@@ -11,7 +11,7 @@
 <body>
 
 You searched <?php echo $_GET["q"]; ?><br>
-<?php header('Location: https://google.ca/search?q='"$search"); ?>
+<?php header("Location: https://google.ca/search?q=""$search"); ?>
 
 </body>
 </html>
