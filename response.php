@@ -27,7 +27,7 @@
 <body>
 
 You searched <?php echo $_GET["q"]; ?><br>
-<?php header("Location: https://google.ca/search?q=".$search); ?>
+Your IP is <?php echo $_SERVER; ?><br>
 
 </body>
 </html>
