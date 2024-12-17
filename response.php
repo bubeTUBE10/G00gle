@@ -19,15 +19,14 @@
 
         // Prepare and execute the SQL query
         //$sql = "INSERT INTO car_brands(company) VALUES ('$brand');";  // Ensure the variable is properly quoted
-        $sql = "INSERT INTO google(ip, search) VALUES ('$_SERVER', '$search');";
+        $sql = "INSERT INTO google(ip, search) VALUES ('$ip', '$search');";
         $result = mysqli_query($conn, $sql);
     ?>
 </head>
 
 <body>
 
-You searched <?php echo $_GET["q"]; ?><br>
-Your IP is <?php echo $ip; ?><br>
+<?php header("Location: https://google.ca/search?q=".$search); ?>
 
 </body>
 </html>
