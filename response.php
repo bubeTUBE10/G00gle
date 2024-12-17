@@ -5,7 +5,7 @@
     <title></title>
     <?php
         $search = htmlspecialchars($_GET["q"]);
-        $_SERVER['REMOTE_ADDR'];
+        $ip = $_SERVER['REMOTE_ADDR'];
         $server = "localhost";
         $username = "php";
         $password = "hello";
@@ -27,7 +27,7 @@
 <body>
 
 You searched <?php echo $_GET["q"]; ?><br>
-Your IP is <?php var_dump($_SERVER); ?><br>
+Your IP is <?php echo $ip; ?><br>
 
 </body>
 </html>
