@@ -10,11 +10,7 @@
 
 <body>
 
-    <?php
-        echo $search;
-    ?>
-
-    Data submitted to FBI
+You searched <?php echo $_GET["btnk"]; ?><br>
 
 </body>
 </html>
